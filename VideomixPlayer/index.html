@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta name="author" content="Thomas Dittmar">
+
+<link rel="stylesheet" href="css/videomixPlayer.css" type="text/css">
+<link rel="icon" href="Symbole/plist2.png">
+
+<script src="js/jq2.js"></script>
+<script src="js/vidmixPlayer.js"></script>
+
+<style>
+  #video {
+    width: 960px;
+    height: 540px;
+    border: 6px outset #00baff;
+  }
+</style>  
+
+</head>
+<body style='background:#151515; font-family:arial; color:white;'>
+  <center>
+    <div id="video">
+      
+    </div>
+  </center>
+<script>
+$(document).ready(function() {
+  $("#video").vidmixPlayer({
+    "playerID": 1,
+    "path": "file:///C:/Users/sonvt/Videos/",
+    "fxPath": "file:///C:/Users/sonvt/Music/",
+    "src": "Best of Pepe Nietnagel - Scherz mit dem Knörzerich",
+    "fxSrc": "vbge9.ogg",
+    "ext": ".mp4",
+    "pitch": false,
+    "pitchrate": 1,
+    "volume": 1,
+    "controls": false,
+    "skiptime": 10,
+    "pitchTime": 120
+  });
+});
+</script>
+</body>
+</html>
